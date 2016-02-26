@@ -1,13 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package exercicios;
 
 import java.util.Scanner;
 
 /**
+ * 2) Crie uma classe para calcular a área de um triângulo.
  *
  * @author Alessandro
  */
