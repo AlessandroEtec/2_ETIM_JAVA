@@ -18,5 +18,5 @@ public class Exercicio01 {
         altura = leia.nextDouble();
         area = base * altura;
         System.out.println("A Área é: " + area);
-    }
+    } 
 }
