@@ -18,4 +18,4 @@ public class Inteiros {
         System.out.println("Int: " + varInt);
         System.out.println("Long: " + varLong);
     }
-}
+} 
