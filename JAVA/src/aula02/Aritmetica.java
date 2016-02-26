@@ -21,5 +21,5 @@ public class Aritmetica {
         System.out.println("Multiplicacao: " + multiplicacao);
         System.out.println("Divisao: " + divisao);
         System.out.println("Resto: " + resto);
-    }
+    } 
 }
