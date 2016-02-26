@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Receber um valor inteiro e se este valor for maior que 5 e menor que 20,
  * exibir seu cubo.
  *
- * @author Alessandro
+ * @author Alessandro 
  */
 public class Exercicio06 {
 
