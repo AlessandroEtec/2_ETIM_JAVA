@@ -15,7 +15,7 @@ public class Aritmetica {
         int multiplicacao = x * y;
         int divisao = x / y;
         int resto = x % y;
-
+ 
         System.out.println("Soma: " + soma);
         System.out.println("Subtracao: " + subtracao);
         System.out.println("Multiplicacao: " + multiplicacao);
