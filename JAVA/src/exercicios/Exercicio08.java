@@ -20,7 +20,7 @@ public class Exercicio08 {
         System.out.print("Digite um numero: ");
         n3 = leia.nextInt();
         if (n1 >= n2 && n2 >= n3) {
-            maior = n1;
+            maior = n1; 
         } else if (n2 >= n3) {
             maior = n2;
         } else {
