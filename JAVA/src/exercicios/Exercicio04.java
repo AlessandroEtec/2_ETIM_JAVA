@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Efetuar a leitura de 3 valores inteiros e apresentar como resultado final o
  * quadrado da soma dos números.
  *
- * @author Alessandro
+ * @author Alessandro 
  */
 public class Exercicio04 {
 
@@ -17,7 +17,7 @@ public class Exercicio04 {
         n1 = leia.nextInt();
         System.out.print("Digite um numero: ");
         n2 = leia.nextInt();
-        System.out.print("Digite um numero: ");
+        System.out.print("Digite um numero: "); 
         n3 = leia.nextInt();
         soma = n1 + n2 + n3;
         quadrado = soma * soma;

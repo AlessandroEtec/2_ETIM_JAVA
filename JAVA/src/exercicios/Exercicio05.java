@@ -14,7 +14,7 @@ public class Exercicio05 {
     public static void main(String[] args) {
         double n;
         Scanner leia = new Scanner(System.in);
-        System.out.print("Digite um numero: ");
+        System.out.print("Digite um numero: "); 
         n = leia.nextDouble();
         if (n >= 100) {
             n = n + 150;
