@@ -3,7 +3,8 @@ package exercicios;
 import java.util.Scanner;
 
 /**
- * Crie uma classe para calcular a área de um retângulo.
+ * Crie uma classe para calcular a área de um <b>retângulo</b>.
+ * 
  *
  * @author Alessandro
  */
