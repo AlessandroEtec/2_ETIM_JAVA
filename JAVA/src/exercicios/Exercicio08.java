@@ -12,7 +12,7 @@ public class Exercicio08 {
 
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
-        int n1, n2, n3, maior;
+        int n1, n2, n3, maior; 
         System.out.print("Digite um numero: ");
         n1 = leia.nextInt();
         System.out.print("Digite um numero: ");
