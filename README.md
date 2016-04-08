@@ -1,2 +1,2 @@
 # 2_ETIM_JAVA
-Aulas de LPOO
+Aulas de Linguagem de Programação Orientada a Objetos
