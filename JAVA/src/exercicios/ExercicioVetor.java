@@ -10,21 +10,24 @@ import javax.swing.JOptionPane;
 public class ExercicioVetor {
 
     //Declaração do vetor 
-    static int[] numeros = new int[10];
+    static int[] numeros = new int[3];
 
-    public static void main(String[] args) {
-        String[] opcoes = {"Incluir", "Exibir", "Sair"};
+    public static void main(String[] args) { 
+        String[] opcoes = {"Incluir", "Exibir", "Sair","Somar"};
         
         while (true) {
             String opcao = JOptionPane.showInputDialog(
                     null, "Escolha a opção", "Pergunta", 
-                    1, null, opcoes, 0).toString();
+                    3, null, opcoes, 0).toString();
             System.out.println(opcao);
             if (opcao.equals("Incluir")) {
                 adicionar();
             }
             if (opcao.equals("Exibir")) {
                 exibir();
+            }
+            if (opcao.equals("Somar")) {
+                somarVetor();
             }
             if (opcao.equals("Sair")) {
                 break;
@@ -49,6 +52,14 @@ public class ExercicioVetor {
     public static void exibir() {
         System.out.println(numeros[0]);
         System.out.println(numeros[1]);
+    }
+    
+    public static void somarVetor(){
+        int soma=0;
+        for (int i = 0; i < numeros.length; i++) {
+            soma = soma + numeros[i];
+        }
+            JOptionPane.showMessageDialog(null,"A soma é: "+  soma);
     }
 
     //Some o vetor
