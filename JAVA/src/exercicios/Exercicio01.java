@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * Crie uma classe para calcular a área de um <b>retângulo</b>.
- * 
+ *
  *
  * @author Alessandro
  */
@@ -19,5 +19,5 @@ public class Exercicio01 {
         altura = leia.nextDouble();
         area = base * altura;
         System.out.println("A Área é: " + area);
-    } 
+    }
 }
