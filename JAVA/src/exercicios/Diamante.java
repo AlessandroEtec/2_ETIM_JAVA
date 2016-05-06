@@ -1,7 +1,5 @@
 package exercicios;
 
-import java.util.Arrays;
-
 /**
  *
  * @author Alessandro
