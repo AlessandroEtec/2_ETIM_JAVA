@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @author Alessandro
  */
 public class Exercicio03 {
-
+ 
     public static void main(String[] args) {
         double lado, frente, area, precoMetro, precoVenda;
         Scanner leia = new Scanner(System.in);
