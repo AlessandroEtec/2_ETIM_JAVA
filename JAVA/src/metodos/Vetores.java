@@ -7,7 +7,7 @@ import java.util.Arrays;
  * @author Alessandro
  * @create: 13/05/2016, 14:03:21
  */
-public class Vetores {
+public class Vetores { 
 
     public static void main(String[] args) {
         int[] vetor = {5, 2, 1, 4, 3};
