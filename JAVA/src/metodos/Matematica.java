@@ -5,7 +5,7 @@ package metodos;
  * @create: 06/05/2016, 12:38:15
  */
 public class Matematica {
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         double a = 5.8;
         double b = 2.5;
         double c = -8.3;
