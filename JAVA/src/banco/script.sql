@@ -1,5 +1,4 @@
 create database if not exists venda;
-
 use venda;
 
 drop table if exists categoria;
