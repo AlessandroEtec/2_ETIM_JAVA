@@ -22,8 +22,10 @@ CREATE TABLE produto (
 	REFERENCES categoria(cat_codigo)
 );
 
+--INSERT Categoria
 INSERT INTO categoria(cat_descricao) values ('Bebidas'),('Lanches'),('Porções'),('Pizzas'),('Sorvetes'),('Doces'),('Saladas');
 
+--INSERT Produto
 insert into produto(cat_codigo,pro_descricao,pro_custo,pro_venda,pro_estoque) values (1,'Agua',1.3,2,100);
 insert into produto(cat_codigo,pro_descricao,pro_custo) values (2,'X-Calabresa',7.88);
 insert into produto(cat_codigo,pro_descricao,pro_custo,pro_venda) values (3,'Porção de Calabresa',12,25);
@@ -46,6 +48,12 @@ insert into produto(cat_codigo,pro_descricao,pro_custo,pro_venda) values (3,'Bat
 insert into produto(cat_codigo,pro_descricao,pro_venda) values (7,'Salada de Alface', 4.49);
 insert into produto(cat_codigo,pro_descricao,pro_venda) values (2,'Salada de Repolho', 5.15);
 insert into produto(cat_codigo,pro_descricao,pro_custo) values (5,'Cascão', 3.72);
+
+--UPDATE
+update produto set cat_codigo = 7 where pro_codigo = 21;
+update produto set cat_codigo = 2 where pro_codigo = 10;
+update produto set cat_codigo = 4 where pro_codigo = 13;
+update produto set cat_codigo = 6 where pro_codigo = 7;
 
 desc categoria;
 desc produto;
