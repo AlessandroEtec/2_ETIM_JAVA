@@ -1,10 +1,5 @@
 package vetor;
 
-/**
- *
- * @author Alessandro
- * @create: 08/04/2016, 12:49:26
- */
 public class Exemplo1 {
 
     public static void main(String[] args) {
