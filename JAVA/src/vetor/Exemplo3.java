@@ -2,11 +2,6 @@ package vetor;
 
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Alessandro
- * @create: 08/04/2016, 12:37:05
- */
 public class Exemplo3 {
 
     public static void main(String[] args) {
@@ -32,3 +27,5 @@ public class Exemplo3 {
         }
     }
 }
+
+
