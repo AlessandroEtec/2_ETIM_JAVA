@@ -39,5 +39,5 @@ public class Texto {
         System.out.println("Maiusculo: "+ Character.toUpperCase(numero));
         System.out.println("Maiusculo: "+ Character.toUpperCase(letra));
     }
-
 }
+
