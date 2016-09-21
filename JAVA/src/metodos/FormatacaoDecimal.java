@@ -2,11 +2,6 @@ package metodos;
 
 import java.text.DecimalFormat;
 
-/**
- *
- * @author Alessandro
- * @create: 20/05/2016, 12:36:01
- */
 public class FormatacaoDecimal {
 
     public static void main(String[] args) {
@@ -18,7 +13,7 @@ public class FormatacaoDecimal {
         int quantidade = 9750;
         df.applyPattern("#0,000");
         System.out.println("Quantidade : " + df.format(quantidade));
-//---------------------------
+        //---------------------------
         long estoque = 198564;
         df.applyPattern("#,##0,000");
         System.out.println("Estoque    : " + df.format(estoque));
@@ -35,5 +30,5 @@ public class FormatacaoDecimal {
         df.applyPattern("R$ #,##0.00");
         System.out.println("Valor em Reais: " + df.format(valorEmReais));
     }
-
 }
+
