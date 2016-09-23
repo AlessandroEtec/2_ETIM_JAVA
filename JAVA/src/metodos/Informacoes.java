@@ -20,7 +20,7 @@ public class Informacoes {
         System.out.println("Outras Informações ");
         System.out.println("Arquitetura: " + System.getProperty("os.arch"));
         System.out.println("Nome do SO: " + System.getProperty("os.name"));
-        System.out.println("Versão do SO" + System.getProperty("os.version"));
+        System.out.println("Versão do SO: " + System.getProperty("os.version"));
         System.out.println("Diretorio do Projeto: " + System.getProperty("user.dir"));
         System.out.println("Pasta do Usuario: " + System.getProperty("user.home"));
         System.out.println("Nome do Usuario: " + System.getProperty("user.name"));
