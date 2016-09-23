@@ -1,9 +1,8 @@
-1)
-O usuario digita 6 numeros (jogo) e armazenar em um vetor
-Sortear 6 numeros e armazenar em outro vetor
+1) O usuario digita 6 numeros (diferentes) e armazenar em um vetor
+Sortear 6 numeros(diferentes) e armazenar em outro vetor
 Armazenar em outro vetor os numeros acertados
 
-Exibir os numeros acertados e a quantidade
+Exibir os numeros acertados e a quantidade de acertos
 
 2) Leia o nome de uma pessoa e altere a primeira letra para maiuscula
 ex: joao silva
