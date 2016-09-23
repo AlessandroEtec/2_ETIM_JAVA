@@ -55,6 +55,12 @@ update produto set cat_codigo = 2 where pro_codigo = 10;
 update produto set cat_codigo = 4 where pro_codigo = 13;
 update produto set cat_codigo = 6 where pro_codigo = 7;
 
+--Alterar produtos com campos NULL
+update produto set pro_venda = pro_custo * 1.3 where pro_venda is NULL;
+update produto set pro_custo = pro_venda / 1.4 where pro_custo is NULL;
+
+select cat_descricao, max(pro_venda) from produto,categoria where categoria.cat_codigo=produto.cat_codigo group by produto.cat_codigo;
+
 desc categoria;
 desc produto;
 select * from categoria;
