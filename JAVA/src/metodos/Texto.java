@@ -9,7 +9,7 @@ public class Texto {
         String texto = "batata";
         String texto2 = JOptionPane.showInputDialog(null, "Digite batata");
         char[] vetorCaracteres;
-        System.out.println("Maiusculo: " + nome.toUpperCase());
+        /*System.out.println("Maiusculo: " + nome.toUpperCase());
         System.out.println("Minusculo: " + nome.toLowerCase());
         System.out.println("Tamanho: " + nome.length());
         System.out.println("Texto: " + texto.replace("t", "n"));
@@ -23,9 +23,9 @@ public class Texto {
         System.out.println("Vetor de Caracteres");
         for (int i = 0; i < vetorCaracteres.length; i++) {
             System.out.println(vetorCaracteres[i]);
-        }
+        }*/
         System.out.println("Pedaço: " + nome.substring(5, 12));
-        System.out.println("Achou: " + nome.indexOf("e"));
+        System.out.println("Achou: " + nome.indexOf("."));
         System.out.println("Achou: " + nome.lastIndexOf("e"));
         
         char numero = '2';
