@@ -26,21 +26,39 @@
 <?php
 $conexao = new mysqli("localhost", "root", "etec");
 $conexao->set_charset("UTF8");
+$ordem = "nome";
+$filtro = "";
+if(!empty($_GET["ordem"])){
+    $ordem = $_GET["ordem"];
+}
+if(!empty($_GET["filtro"])){
+    $filtro = $_GET["filtro"];
+}
 if ($conexao->connect_error) {
     die("Falha ao conectar: " . $conexao->connect_error);
 }
 if (!$conexao->select_db("agenda")) {
     die("O Banco de dados não existe");
 }
-$sql = "SELECT * FROM pessoa";
+$sql = "SELECT * FROM pessoa where nome like '%$filtro%' order by $ordem";
 $resultado = $conexao->query($sql);
 if ($resultado) {
+    ?>
+   
+
+        <?php
     echo "<table border='1'>" .
+           "<caption>
+             <form>
+              <input type='text' name='filtro'/>
+              <input type='submit' value='Filtrar'/>
+             </form>
+            </caption>".
     "<thead>" .
     "<tr>" .
-    "<th>Nome</th>" .
+    "<th><a href='?ordem=nome'>Nome</a></th>" .
     "<th>Endereço</th>" .
-    "<th>Cidade</th>" .
+    "<th><a href='?ordem=cidade'>Cidade</a></th>" .
     "<th>Telefone</th>" .
     "</tr>" .
     "</thead>".
@@ -56,7 +74,10 @@ if ($resultado) {
              "<td>" . $linha["telefone"] . "</td>" .
              "</tr>";
     }
-    echo "</tbody></table>";
+    echo "</tbody>";
+    echo "<tfoot><tr><th colspan='4'>Registros: $cont</th></tfoot>";
+    echo  "</table>";
+    
 } else {
     echo "Erro SQL: " . $conexao->error;
 }
