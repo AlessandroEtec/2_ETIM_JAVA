@@ -4,6 +4,8 @@
     }
     table{
         margin: 0 auto;
+        border-collapse: collapse;
+        border: solid 1px black;
     }
     thead{
         background-color: #6666ff;
@@ -11,6 +13,13 @@
     }
     td, th{
         padding: 5px;
+    }
+    .c0{
+        background-color: #dddddd;
+    }
+    .c1{
+        background-color: #aaaaaa;
+        
     }
     
 </style>
@@ -36,12 +45,16 @@ if ($resultado) {
     "</tr>" .
     "</thead>".
             "<tbody>";
+    $cont = 0;
     while ($linha = $resultado->fetch_array()) {
-               echo "<tr>" .
+        $cont++;
+        $classe = $cont % 2;
+               echo "<tr class='c$classe'>" .
              "<td>" . $linha["nome"] . "</td>" .
              "<td>" . $linha["endereco"] . "</td>" .
              "<td>" . $linha["cidade"] . "</td>" .
-             "<td>" . $linha["telefone"] . "</td>" ;
+             "<td>" . $linha["telefone"] . "</td>" .
+             "</tr>";
     }
     echo "</tbody></table>";
 } else {
