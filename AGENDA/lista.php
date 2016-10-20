@@ -37,8 +37,8 @@ if ($resultado) {
     "</thead>".
             "<tbody>";
     while ($linha = $resultado->fetch_array()) {
-        echo "<tr>" ;
-        echo "<td>" . $linha["nome"] . "</td>" .
+               echo "<tr>" .
+             "<td>" . $linha["nome"] . "</td>" .
              "<td>" . $linha["endereco"] . "</td>" .
              "<td>" . $linha["cidade"] . "</td>" .
              "<td>" . $linha["telefone"] . "</td>" ;
