@@ -12,7 +12,7 @@
         color:white;
     }
     td, th{
-        padding: 5px;
+        padding: 8px;
     }
     .c0{
         background-color: #dddddd;
@@ -60,6 +60,7 @@ if ($resultado) {
     "<th>Endereço</th>" .
     "<th><a href='?ordem=cidade'>Cidade</a></th>" .
     "<th>Telefone</th>" .
+    "<th colspan='2'>Ações</th>" .
     "</tr>" .
     "</thead>".
             "<tbody>";
@@ -67,15 +68,19 @@ if ($resultado) {
     while ($linha = $resultado->fetch_array()) {
         $cont++;
         $classe = $cont % 2;
+        $codigo = $linha["codigo"];
                echo "<tr class='c$classe'>" .
              "<td>" . $linha["nome"] . "</td>" .
              "<td>" . $linha["endereco"] . "</td>" .
              "<td>" . $linha["cidade"] . "</td>" .
              "<td>" . $linha["telefone"] . "</td>" .
+             "<td><a href='formularioAlterar.php?codigo=$codigo'><img title='Editar' src='img/edit.png' height='18'/></a></td>".
+             "<td><a href='excluir.php?codigo=$codigo'><img title='Excluir' src='img/delete.png' height='18'/></a></td>".
+                       
              "</tr>";
     }
     echo "</tbody>";
-    echo "<tfoot><tr><th colspan='4'>Registros: $cont</th></tfoot>";
+    echo "<tfoot><tr><th colspan='6'>Registros: $cont</th></tfoot>";
     echo  "</table>";
     
 } else {
