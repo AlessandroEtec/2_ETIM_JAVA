@@ -34,8 +34,8 @@
 
 </style>
 <?php
-$conexao = new mysqli("localhost", "root", "etec");
-$conexao->set_charset("UTF8");
+include ("conexao.php");
+$conexao = conectar();
 $ordem = "nome";
 $filtro = "";
 if (!empty($_GET["ordem"])) {
@@ -43,12 +43,6 @@ if (!empty($_GET["ordem"])) {
 }
 if (!empty($_GET["filtro"])) {
     $filtro = $_GET["filtro"];
-}
-if ($conexao->connect_error) {
-    die("Falha ao conectar: " . $conexao->connect_error);
-}
-if (!$conexao->select_db("agenda")) {
-    die("O Banco de dados não existe");
 }
 $sql = "SELECT * FROM pessoa where nome like '%$filtro%' order by $ordem";
 $resultado = $conexao->query($sql);
