@@ -1,4 +1,3 @@
-
 <?php
 $conexao = new mysqli("localhost", "root", "etec");
 $conexao->set_charset("UTF8");
@@ -18,10 +17,10 @@ $sql = "update pessoa set nome = '$nome' , endereco = '$endereco'," .
         "cidade = '$cidade' , telefone =  '$fone' where codigo = $codigo";
 $status = $conexao->query($sql);
 if ($status == 0) {
-    echo "Erro ao inserir: " . $conexao->error;
+    echo "Erro ao Alterar: " . $conexao->error;
 } else if ($status == 1) {
     echo "<script>alert('Registro Alterado com Sucesso')</script>"
-    . "<meta HTTP-EQUIV='Refresh' CONTENT='0;URL=index.php'>";
+    . "<meta HTTP-EQUIV='Refresh' CONTENT='0;URL=lista.php'>";
 }
 $conexao->close();
 ?>
