@@ -1,6 +1,5 @@
 <?php
 $codigo = $_GET["codigo"];
-echo "Código: " . $codigo . "<br>";
 
 $conexao = new mysqli("localhost", "root", "etec");
 $conexao->set_charset("UTF8");
@@ -21,6 +20,7 @@ if ($resultado) {
 }
 ?>
 <form method="GET" action="alterar.php">
+    <input type="hidden" name="codigo" value="<?=$codigo?>" >
     Nome: <input type="text" name="nome" value="<?=$nome?>"><br>
     Endereço: <input type="text" name="endereco" value="<?=$endereco?>"><br>
     Cidade: <input type="text" name="cidade" value="<?=$cidade?>"><br>
